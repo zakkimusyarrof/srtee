@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Undangan Pernikahan Fajar & Intan</title>
+<meta property="og:title" content="Pernikahan Fajar & Intan">
+<meta property="og:description" content="Minggu, 6 Juni 2027">
+<link rel="icon" type="image/webp" href="https://cdn.jsdelivr.net/gh/zakkimusyarrof/img-byzkk@main/logo_20260906_093655_0000.jpg">
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/zakkimusyarrof/img-byzkk@main/logo_20260906_093655_0000.jpg">
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+:root{--sage:#a9bfae;--sage2:#8ea896;--forest:#2d4a3a;--deep:#1f3428;--paper:#f7f8f3;--wax:#8c2f39;--gold:#c9a24a;--ink:#1f2a24;--hand:"Caveat",cursive;--serif:"Source Serif 4",Georgia,serif}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font:400 17px/1.7 var(--serif);background:var(--forest);color:var(--ink)}
+body.lock{overflow:hidden}
+img{display:block;max-width:100%}
+:focus-visible{outline:3px solid var(--wax);outline-offset:3px}
+h2,h3{font-family:var(--hand);font-weight:700;line-height:1.05;color:var(--forest)}
+h2{font-size:clamp(2.4rem,8vw,3.4rem);margin-bottom:1rem}
+.btn{display:inline-block;border:2px solid var(--forest);background:none;color:var(--forest);padding:.55rem 1.3rem;font:600 .95rem var(--serif);border-radius:99px;cursor:pointer;text-decoration:none;transition:background .2s,color .2s}
+.btn:hover{background:var(--forest);color:var(--paper)}
+.btn.w{background:var(--wax);border-color:var(--wax);color:#fff}
+.btn.w:hover{background:var(--deep);border-color:var(--deep)}
+.row{display:flex;flex-wrap:wrap;gap:.7rem}
+
+/* Cover: amplop */
+#cover{position:fixed;inset:0;z-index:60;background:radial-gradient(circle at 50% 40%,#3b5e4a,var(--deep) 75%);display:grid;place-items:center;align-content:center;gap:2.4rem;padding:1.4rem;transition:opacity .9s}
+#cover.out{opacity:0;pointer-events:none}
+#cover p{color:#d6e2d9;font:700 1.5rem var(--hand);text-align:center}
+.env{position:relative;width:min(440px,88vw);aspect-ratio:3/2;perspective:1200px;margin-top:6rem}
+.env>*{position:absolute}
+.bk{inset:0;background:var(--sage2);border-radius:6px;box-shadow:0 24px 50px rgba(0,0,0,.45)}
+.lt{left:7%;right:7%;top:7%;height:90%;background:var(--paper);z-index:2;transition:transform 1.3s .7s cubic-bezier(.5,0,.2,1);padding:1rem;font:700 1.3rem var(--hand);color:var(--forest);text-align:center;display:grid;place-content:center}
+.fr{inset:0;z-index:3;background:linear-gradient(160deg,var(--sage),var(--sage2));clip-path:polygon(0 0,50% 56%,100% 0,100% 100%,0 100%);border-radius:6px}
+.fl{left:0;right:0;top:0;height:60%;z-index:4;background:linear-gradient(var(--sage2),#7e9a87);clip-path:polygon(0 0,100% 0,50% 100%);transform-origin:top;transition:transform .9s,z-index 0s .45s}
+.lb2{left:5%;bottom:7%;z-index:5;background:var(--paper);padding:.5rem .9rem;border-radius:3px;box-shadow:0 2px 6px rgba(0,0,0,.25);font:700 1.15rem/1.15 var(--hand);color:var(--ink);max-width:62%;rotate:-2deg}
+.lb2 small{display:block;font:400 .72rem var(--serif);color:#5a665e}
+.pm{right:5%;bottom:8%;z-index:5;display:flex;align-items:center;gap:.4rem}
+.stp{background:#fff;border:6px dotted var(--sage2);padding:.35rem;rotate:4deg}
+.stp i{display:block;width:44px;height:52px;background:linear-gradient(var(--wax),var(--forest));display:grid;place-items:center;color:#fff;font:700 .9rem var(--hand);font-style:normal}
+.mk{width:62px;height:62px;border:2px solid rgba(31,42,36,.55);border-radius:50%;display:grid;place-content:center;text-align:center;font:600 .55rem/1.15 var(--serif);color:rgba(31,42,36,.7);margin-left:-14px;rotate:-12deg}
+.sl{left:50%;top:56%;translate:-50% -50%;z-index:6;width:68px;height:68px;border:0;border-radius:50%;cursor:pointer;background:radial-gradient(circle at 35% 30%,#b8434e,var(--wax) 55%,#5e1c25);box-shadow:0 4px 10px rgba(0,0,0,.45),inset 0 -3px 6px rgba(0,0,0,.3);color:#f1c9ce;font:700 1.35rem var(--hand);animation:pulse 1.8s ease-in-out infinite}
+@keyframes pulse{50%{scale:1.08}}
+.env.open .sl{animation:crack .6s forwards}
+@keyframes crack{to{scale:1.5;opacity:0;rotate:25deg}}
+.env.open .fl{transform:rotateX(180deg);z-index:1}
+.env.open .lt{transform:translateY(-68%)}
+
+/* Surat */
+.sheet{position:relative;max-width:780px;margin:0 auto;background:var(--paper);padding:clamp(2rem,7vw,4.5rem) clamp(1.3rem,7vw,4rem);box-shadow:0 0 60px rgba(0,0,0,.4)}
+.sheet::before{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(transparent calc(33.3% - 1px),rgba(0,0,0,.07) 33.3%,transparent calc(33.3% + 3px)),linear-gradient(transparent calc(66.6% - 1px),rgba(0,0,0,.07) 66.6%,transparent calc(66.6% + 3px))}
+.sheet>section{margin-bottom:4rem;position:relative}
+.sal{font:700 clamp(2.2rem,8vw,3.3rem)/1.1 var(--hand);color:var(--forest);min-height:1.2em}
+.isi{margin-top:1.4rem;font-size:1.1rem}
+.isi b{font-weight:600}
+.after{opacity:0;transition:opacity 1.4s}
+.after.on{opacity:1}
+.ttl{font:700 1.4rem var(--hand);color:var(--wax)}
+
+/* Foto berlakban */
+.tp{position:relative;background:#fff;padding:12px 12px 48px;box-shadow:0 6px 18px rgba(0,0,0,.2);rotate:-2deg;max-width:520px;margin:2rem auto}
+.tp::before,.tp::after{content:"";position:absolute;width:96px;height:28px;background:rgba(201,162,74,.55);top:-12px}
+.tp::before{left:-26px;rotate:-35deg}.tp::after{right:-26px;rotate:32deg}
+.tp .cap{position:absolute;bottom:10px;left:0;right:0;text-align:center;font:700 1.3rem var(--hand)}
+.xf{position:relative;aspect-ratio:4/3;overflow:hidden;background:var(--forest)}
+.xf img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity 1.6s}
+.xf img.on{opacity:1}
+
+/* Perangko hitung mundur */
+.cd{display:flex;flex-wrap:wrap;gap:.9rem}
+.cd .stp{min-width:78px;text-align:center;padding:.6rem .5rem;border-color:var(--paper);outline:1px solid #cfd6cb}
+.cd .stp:nth-child(odd){rotate:-3deg}.cd .stp:nth-child(even){rotate:3deg}
+.cd b{display:block;font:700 2.3rem/1 var(--hand);color:var(--wax)}
+.cd small{font-size:.8rem}
+
+.ayat{font-style:italic;font-size:1.15rem;border-left:3px solid var(--wax);padding-left:1.2rem;max-width:34em}
+.ayat cite{display:block;margin-top:.5rem;font-style:normal;font-weight:600;font-size:.95rem}
+
+/* Tanda tangan mempelai */
+.duo{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:2.4rem}
+.duo .tp{margin:1rem 0;padding-bottom:12px;max-width:none}
+.duo .tp img{width:100%;aspect-ratio:1;object-fit:cover}
+.duo h3{font-size:2.3rem;margin:.9rem 0 .1rem}
+.duo p{font-size:.95rem;margin-bottom:.8rem}
+
+/* Catatan harian */
+.dr{max-width:600px}
+.dr div{padding:0 0 1.5rem 1.4rem;border-left:2px dashed var(--sage2);position:relative}
+.dr div::before{content:"";position:absolute;left:-7px;top:.5rem;width:12px;height:12px;border-radius:50%;background:var(--wax)}
+.dr b{font:700 1.5rem var(--hand);color:var(--forest);display:block}
+
+/* Kartu acara */
+.inv{background:#fff;padding:1.5rem;margin-bottom:1.6rem;box-shadow:0 4px 14px rgba(0,0,0,.14);outline:2px dashed var(--sage2);outline-offset:-10px;max-width:560px}
+.inv:nth-of-type(odd){rotate:-.8deg}.inv:nth-of-type(even){rotate:.8deg;margin-left:auto}
+.inv h3{font-size:2.3rem}
+.inv p{margin:.2rem 0}
+.inv .row{margin-top:1rem}
+
+/* Galeri */
+.pg{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:1.4rem}
+.pg button{border:0;background:#fff;padding:8px 8px 30px;box-shadow:0 4px 12px rgba(0,0,0,.2);cursor:zoom-in}
+.pg button:nth-child(3n+1){rotate:-2.5deg}.pg button:nth-child(3n+2){rotate:1.8deg}.pg button:nth-child(3n){rotate:-1deg}
+.pg img{width:100%;aspect-ratio:3/4;object-fit:cover}
+#lb{position:fixed;inset:0;z-index:90;background:rgba(15,25,19,.95);display:none;place-items:center}
+#lb.on{display:grid}
+#lb img{max-height:86vh;max-width:94vw;border:8px solid #fff}
+#lb button{position:absolute;background:none;border:0;color:#fff;font-size:2.4rem;padding:1rem;cursor:pointer}
+#lb .x{top:0;right:0}#lb .p{left:0}#lb .n{right:0}
+
+/* Hadiah */
+#cards{display:none;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));margin-top:1.4rem}
+#cards.on{display:grid}
+.gc{background:#fff;padding:1.1rem;border:1px solid #cfd6cb;box-shadow:0 3px 8px rgba(0,0,0,.1)}
+.gc b{display:block;font:700 1.6rem var(--hand);color:var(--forest)}
+.gc .no{font-weight:600;font-size:1.15rem}.gc p{margin-bottom:.8rem}
+
+/* Kartu pos balasan */
+.pc{padding:10px;background:repeating-linear-gradient(135deg,#c0392b 0 14px,#fff 14px 28px,#2b59b5 28px 42px,#fff 42px 56px);box-shadow:0 8px 22px rgba(0,0,0,.25);transition:transform 1.1s cubic-bezier(.5,0,.8,.3),opacity 1.1s}
+.pc.fly{transform:translate(35vw,-90vh) rotate(24deg) scale(.3);opacity:0}
+.pc form{background:#fff;display:grid;grid-template-columns:1.3fr 1fr;gap:0}
+.pc .l{padding:1.2rem;border-right:2px solid var(--ink)}
+.pc .r{padding:1.2rem;display:grid;gap:.7rem;align-content:start;position:relative}
+.pc .to{font:700 1.3rem/1.2 var(--hand);padding-top:3.4rem}
+.pc .stp{position:absolute;top:1rem;right:1rem}
+.pc label span{display:block;font:700 1.1rem var(--hand);color:var(--forest)}
+.pc input,.pc select{width:100%;font:inherit;font-size:.95rem;padding:.3rem 0;border:0;border-bottom:2px solid var(--sage2);background:none}
+.pc textarea{width:100%;height:210px;font:500 1.25rem/32px var(--hand);border:0;resize:none;background:repeating-linear-gradient(transparent 0 31px,var(--sage) 31px 32px);color:var(--ink)}
+.pc .row{grid-column:1/-1;padding:1rem 1.2rem;border-top:2px solid var(--ink)}
+@media(max-width:620px){.pc form{grid-template-columns:1fr}.pc .l{border-right:0;border-bottom:2px solid var(--ink)}.pc .to{padding-top:0}.pc .stp{display:none}}
+#list{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.2rem;margin-top:2.4rem}
+#list article{background:#fff;padding:1rem 1.2rem;border-top:6px solid var(--sage);box-shadow:0 3px 10px rgba(0,0,0,.14)}
+#list article:nth-child(odd){rotate:-1deg}#list article:nth-child(even){rotate:1deg}
+#list b{font:700 1.4rem var(--hand);color:var(--forest)}
+#list small{display:block;color:#5a665e;font-size:.8rem}
+#list p{font:500 1.15rem/1.3 var(--hand);margin-top:.3rem}
+.empty{font-style:italic;color:#5a665e}
+
+.tutup{text-align:left}
+.tutup .sg{font:700 clamp(2.6rem,10vw,4rem)/1 var(--hand);color:var(--forest);margin:.6rem 0 1.6rem}
+.ps{font-size:.95rem;color:#4d5a52;max-width:40em}
+footer{text-align:center;color:#b8cabc;font-size:.85rem;padding:2rem 1rem}
+#sw{position:fixed;top:12px;right:12px;z-index:70;background:var(--paper);border:2px solid var(--forest);color:var(--forest);padding:.3rem .9rem;font:700 1.05rem var(--hand);cursor:pointer;border-radius:99px;display:none}
+#toast{position:fixed;left:50%;bottom:1.4rem;translate:-50% 16px;background:var(--forest);color:#fff;padding:.7rem 1.3rem;border-radius:99px;opacity:0;pointer-events:none;transition:.3s;z-index:99;max-width:90vw;text-align:center}
+#toast.on{opacity:1;translate:-50% 0}
+.rv{opacity:0;transform:translateY(18px);transition:opacity .9s,transform .9s}
+.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body class="lock">
+<div id="cover"><p>Sebuah surat untuk Anda</p><div class="env" id="env"></div><p id="hint">Ketuk segel lilin untuk membuka</p></div>
+<button id="sw" role="switch" aria-checked="false">Musik off</button>
+<main class="sheet" id="app"></main>
+<footer id="foot"></footer>
+<div id="lb" role="dialog" aria-label="Foto"><button class="x" aria-label="Tutup">×</button><button class="p" aria-label="Sebelumnya">‹</button><img alt=""><button class="n" aria-label="Berikutnya">›</button></div>
+<div id="toast" role="status"></div>
+<audio id="aud" loop></audio>
+
+<script>
+/* =====================================================================
+   DATA UNDANGAN — ubah bagian ini saja untuk setiap klien
+   ===================================================================== */
+const P = (s, w, h) => `https://picsum.photos/seed/${s}/${w}/${h}`; // placeholder: GANTI dengan URL foto asli
+const C = {
+  id: "fajar-intan",                       // kunci unik penyimpanan balasan
+  musik: "https://cdn.jsdelivr.net/gh/zakkimusyarrof/musik-undangandigital@main/chfl.mp3",                               // GANTI: URL file .mp3 (kosong = saklar tampil, belum ada suara)
+  wa: "6281200000000",                     // GANTI: nomor WhatsApp penerima balasan (format 62...)
+  studio: "@zakkimusyarrof",
+  kota: "MALANG",                          // tulisan pada cap pos
+  pembuka: "Dengan penuh rasa syukur, kami ingin mengabarkan bahwa kami akan menikah. Kehadiran dan doa Anda akan membuat hari itu terasa lengkap, dan surat ini adalah cara kami mengetuk pintu Anda lebih dulu.",
+  ps: "P.S. Datanglah dengan perut kosong. Keluarga kami sudah menyiapkan makanan yang jauh lebih banyak dari yang kami butuhkan.",
+  hero: [P("sr-hero1",1200,900), P("sr-hero2",1200,900), P("sr-hero3",1200,900)],
+  ayat: { teks: "Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri, agar kamu cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa kasih dan sayang.", sumber: "QS Ar-Rum: 21" },
+  pria:   { nama: "Fajar Nugroho", anak: "Putra kedua dari Bapak Slamet & Ibu Yuni", ig: "https://instagram.com/", foto: "https://cdn.jsdelivr.net/gh/zakkimusyarrof/img-src@main/pp1.webp" },
+  wanita: { nama: "Intan Permata", anak: "Putri pertama dari Bapak Joko & Ibu Rini", ig: "https://instagram.com/", foto: "https://cdn.jsdelivr.net/gh/zakkimusyarrof/img-src@main/pp2.webp" },
+  cerita: [
+    ["Oktober 2019", "Kami berkenalan lewat surat. Ya, benar-benar surat, karena Intan sedang kuliah di luar kota dan Fajar ingin terlihat berbeda."],
+    ["Mei 2026", "Fajar mengetuk pintu rumah Intan bersama keluarganya. Lamaran itu diterima sebelum teh sempat dingin."],
+    ["Juni 2027", "Sekarang giliran kami mengirim surat kepada Anda, kali ini untuk mengundang."]
+  ],
+  acara: [
+    { judul: "Akad Nikah", mulai: "2027-06-06T08:00:00", selesai: "2027-06-06T10:00:00", jam: "08.00 WIB", tempat: "Masjid Raya Sabilillah, Jl. Ijen No. 6, Malang", peta: "https://maps.google.com/" },
+    { judul: "Resepsi", mulai: "2027-06-06T11:00:00", selesai: "2027-06-06T14:00:00", jam: "11.00 WIB", tempat: "Gedung Graha Cakrawala, Jl. Veteran No. 19, Malang", peta: "https://maps.google.com/" }
+  ],
+  galeri: ["https://cdn.jsdelivr.net/gh/zakkimusyarrof/img-src@main/pp3.webp", "https://cdn.jsdelivr.net/gh/zakkimusyarrof/img-src@main/pp4.webp", "https://cdn.jsdelivr.net/gh/zakkimusyarrof/img-src@main/pp5.webp","https://cdn.jsdelivr.net/gh/zakkimusyarrof/img-src@main/pp6.webp", "https://cdn.jsdelivr.net/gh/zakkimusyarrof/img-src@main/pp7.webp", "https://cdn.jsdelivr.net/gh/zakkimusyarrof/img-src@main/pp8.webp"],
+  hadiah: [ { bank: "DANA", no: "0812-0000-0001", nama: "Fajar Nugroho" }, { bank: "DANA", no: "0812-0000-0002", nama: "Intan Permata" } ],
+  penutup: "Merupakan kebahagiaan dan kehormatan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir dan memberikan doa restu."
+};
+
+/* =====================================================================
+   KODE TEMA (tidak perlu diubah)
+   ===================================================================== */
+const $ = (s, r = document) => r.querySelector(s);
+const esc = s => String(s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const A = C.pria.nama.split(" ")[0], B = C.wanita.nama.split(" ")[0];
+const tamu = new URLSearchParams(location.search).get("to") || "Tamu Undangan";
+const E0 = C.acara[0];
+const tglTeks = new Date(E0.mulai).toLocaleDateString("id-ID", { weekday: "long", day: "numeric", month: "long", year: "numeric" });
+const hariIni = new Date().toLocaleDateString("id-ID", { day: "2-digit", month: "short", year: "numeric" }).toUpperCase();
+let tt; const toast = m => { const e = $("#toast"); e.textContent = m; e.classList.add("on"); clearTimeout(tt); tt = setTimeout(() => e.classList.remove("on"), 2400); };
+const salin = (txt, pesan) => (navigator.clipboard ? navigator.clipboard.writeText(txt) : Promise.reject()).catch(() => {
+  const t = document.createElement("textarea"); t.value = txt; document.body.appendChild(t); t.select(); document.execCommand("copy"); t.remove();
+}).then(() => toast(pesan));
+const store = { get: k => { try { return localStorage.getItem(k); } catch (e) { return null; } }, set: (k, v) => { try { localStorage.setItem(k, v); } catch (e) {} } };
+const ps = (id) => `<span class="stp"><i>${id}</i></span>`;
+
+/* Amplop */
+$("#env").innerHTML = `<div class="bk"></div><div class="lt">${A} &amp; ${B}</div><div class="fr"></div><div class="fl"></div>
+  <div class="lb2">Untuk: ${esc(tamu)}<small>dari ${A} &amp; ${B}</small></div>
+  <div class="pm"><span class="stp"><i>${A[0]}&amp;${B[0]}</i></span><div class="mk">${C.kota}<br>${hariIni}</div></div>
+  <button class="sl" id="seal" aria-label="Buka surat">${A[0]}${B[0]}</button>`;
+
+const cardH = (p) => `<div><div class="tp rv"><img src="${p.foto}" alt="${p.nama}" loading="lazy"></div><h3>${p.nama}</h3><p>${p.anak}</p><a class="btn" href="${p.ig}" target="_blank" rel="noopener">Instagram</a></div>`;
+$("#app").innerHTML = `
+<section><div class="sal" id="tw" aria-label="Kepada ${esc(tamu)}"></div>
+  <div class="after" id="aft"><p class="isi">${C.pembuka}</p>
+  <p class="isi">Pernikahan kami akan berlangsung pada <b>${tglTeks}</b>.</p>
+  <div class="tp"><div class="xf">${C.hero.map((s, i) => `<img src="${s}" alt="" ${i ? 'loading="lazy"' : ""}>`).join("")}</div><div class="cap">${A} &amp; ${B}</div></div></div></section>
+<section class="rv"><p class="ttl">Tinggal berapa lama lagi?</p><div class="cd" id="cd"><span class="stp"><b id="d">0</b><small>hari</small></span><span class="stp"><b id="h">0</b><small>jam</small></span><span class="stp"><b id="m">0</b><small>menit</small></span><span class="stp"><b id="s">0</b><small>detik</small></span></div></section>
+<section class="rv"><blockquote class="ayat">${C.ayat.teks}<cite>${C.ayat.sumber}</cite></blockquote></section>
+<section><h2 class="rv">Dari kami berdua</h2><div class="duo">${cardH(C.pria)}${cardH(C.wanita)}</div></section>
+<section><h2 class="rv">Catatan perjalanan</h2><div class="dr">${C.cerita.map(c => `<div class="rv"><b>${c[0]}</b><p>${c[1]}</p></div>`).join("")}</div></section>
+<section><h2 class="rv">Kartu undangan</h2>${C.acara.map((e, i) => `
+  <div class="inv rv"><h3>${e.judul}</h3><p><b>${tglTeks}</b></p><p>${e.jam}</p><p>${e.tempat}</p>
+  <div class="row"><a class="btn w" href="${e.peta}" target="_blank" rel="noopener">Buka peta</a><button class="btn" data-ics="${i}">Simpan ke kalender</button></div></div>`).join("")}</section>
+<section><h2 class="rv">Foto-foto terselip</h2><div class="pg" id="pg">${C.galeri.map((s, i) => `<button data-i="${i}" aria-label="Perbesar foto ${i + 1}"><img src="${s}" alt="Foto ${i + 1}" loading="lazy"></button>`).join("")}</div></section>
+<section class="rv"><h2>Amplop kecil</h2><p class="isi">Doa Anda sudah menjadi hadiah terbaik. Bila ingin menyelipkan tanda kasih, silakan lewat e-wallet berikut.</p><br>
+  <button class="btn w" id="gbtn" aria-expanded="false">Buka amplop kecil</button>
+  <div id="cards">${C.hadiah.map(g => `<div class="gc"><b>${g.bank}</b><p class="no">${g.no}</p><p>a.n. ${g.nama}</p><button class="btn" data-no="${g.no}" data-b="${g.bank}">Salin nomor</button></div>`).join("")}</div></section>
+<section><h2 class="rv">Tulis balasan</h2><p class="isi" style="margin-bottom:1.6rem">Isi kartu pos ini, lalu kirim. Balasan Anda akan sampai langsung ke meja kami.</p>
+  <div class="pc" id="pc"><form id="f"><div class="l"><label><span>Pesan untuk kami</span><textarea name="pesan" required maxlength="300" placeholder="Tulis ucapan dan doa di sini..."></textarea></label></div>
+  <div class="r">${ps(A[0] + "&" + B[0])}<div class="to">Kepada:<br>${A} &amp; ${B}<br><small style="font:400 .8rem var(--serif)">${C.kota}</small></div>
+  <label><span>Nama pengirim</span><input name="nama" required maxlength="60" autocomplete="name" value="${tamu === "Tamu Undangan" ? "" : esc(tamu)}"></label>
+  <label><span>Kehadiran</span><select name="hadir"><option>Hadir</option><option>Belum pasti</option><option>Tidak bisa hadir</option></select></label>
+  <label><span>Jumlah tamu</span><select name="jumlah"><option>1</option><option>2</option><option>3</option><option>4</option></select></label></div>
+  <div class="row"><button class="btn w" type="submit">Kirim kartu pos</button><button class="btn" type="button" id="wa">Kirim lewat WhatsApp</button></div></form></div>
+  <div id="list"></div></section>
+<section class="tutup rv"><p class="isi">${C.penutup}</p><p class="ttl" style="margin-top:2rem">Dengan penuh cinta,</p><div class="sg">${A} &amp; ${B}</div><p class="ps">${C.ps}</p></section>`;
+$("#foot").textContent = `Undangan digital oleh ${C.studio}`;
+
+/* Efek ketik tulisan tangan */
+const ketik = (el, teks, done) => {
+  if (matchMedia("(prefers-reduced-motion:reduce)").matches) { el.textContent = teks; return done(); }
+  let i = 0; (function n() { el.textContent = teks.slice(0, ++i); i < teks.length ? setTimeout(n, 70) : done(); })();
+};
+
+/* Musik + buka segel */
+const aud = $("#aud"), sw = $("#sw"); let on = false;
+if (C.musik) aud.src = C.musik;
+const musik = v => {
+  on = v; sw.setAttribute("aria-checked", v); sw.textContent = v ? "Musik on" : "Musik off"; store.set("musik-" + C.id, v ? "on" : "off");
+  if (!C.musik) return v && toast("URL musik belum diisi pada data undangan");
+  v ? aud.play().catch(() => { on = false; sw.setAttribute("aria-checked", false); sw.textContent = "Musik off"; }) : aud.pause();
+};
+sw.onclick = () => musik(!on);
+let opened = false;
+const buka = () => {
+  if (opened) return; opened = true;
+  $("#env").classList.add("open"); $("#hint").textContent = "";
+  if (store.get("musik-" + C.id) !== "off") musik(true);
+  sw.style.display = "block";
+  setTimeout(() => { $("#cover").classList.add("out"); document.body.classList.remove("lock"); ketik($("#tw"), `Kepada Yth. ${tamu},`, () => $("#aft").classList.add("on")); }, 2500);
+  setTimeout(() => $("#cover").style.display = "none", 3500);
+};
+$("#seal").onclick = buka; $("#env").onclick = buka;
+
+/* Slider foto */
+{ const im = [...$(".xf").children]; let i = 0; im[0].classList.add("on");
+  setInterval(() => { im[i].classList.remove("on"); i = (i + 1) % im.length; im[i].classList.add("on"); }, 4500); }
+
+/* Hitung mundur */
+const t0 = new Date(E0.mulai).getTime();
+const tick = () => {
+  const d = t0 - Date.now();
+  if (d <= 0) { $("#cd").innerHTML = "<b class='ttl' style='font-size:1.8rem'>Hari bahagia telah tiba</b>"; return clearInterval(iv); }
+  $("#d").textContent = Math.floor(d / 864e5); $("#h").textContent = Math.floor(d % 864e5 / 36e5);
+  $("#m").textContent = Math.floor(d % 36e5 / 6e4); $("#s").textContent = Math.floor(d % 6e4 / 1e3);
+};
+const iv = setInterval(tick, 1000); tick();
+
+/* Simpan ke kalender (.ics) */
+document.querySelectorAll("[data-ics]").forEach(b => b.onclick = () => {
+  const e = C.acara[b.dataset.ics], f = s => s.replace(/[-:]/g, ""), x = s => s.replace(/,/g, "\\,");
+  const t = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//Undangan Digital//ID", "BEGIN:VEVENT", `UID:${C.id}-${b.dataset.ics}@undangan`,
+    `DTSTAMP:${f(new Date().toISOString().slice(0, 19))}Z`, `DTSTART:${f(e.mulai)}`, `DTEND:${f(e.selesai)}`,
+    `SUMMARY:${x(e.judul + " " + A + " & " + B)}`, `LOCATION:${x(e.tempat)}`, "END:VEVENT", "END:VCALENDAR"].join("\r\n");
+  const a = document.createElement("a"); a.href = URL.createObjectURL(new Blob([t], { type: "text/calendar" }));
+  a.download = `${C.id}-${e.judul.toLowerCase().replace(/\s/g, "-")}.ics`; a.click(); toast("Acara disimpan ke kalender");
+});
+
+/* Amplop kecil (hadiah) */
+$("#gbtn").onclick = e => { const o = $("#cards").classList.toggle("on"); e.target.setAttribute("aria-expanded", o); };
+$("#cards").onclick = e => { const b = e.target.closest("button"); if (b) salin(b.dataset.no.replace(/-/g, ""), `Nomor ${b.dataset.b} disalin`); };
+
+/* Lightbox + geser jari */
+const lb = $("#lb"), lbi = $("img", lb); let cur = 0, lx = 0;
+const show = i => { cur = (i + C.galeri.length) % C.galeri.length; lbi.src = C.galeri[cur]; lb.classList.add("on"); };
+$("#pg").onclick = e => { const b = e.target.closest("button"); if (b) show(+b.dataset.i); };
+$(".p", lb).onclick = () => show(cur - 1); $(".n", lb).onclick = () => show(cur + 1);
+$(".x", lb).onclick = () => lb.classList.remove("on");
+lb.onclick = e => { if (e.target === lb) lb.classList.remove("on"); };
+lb.ontouchstart = e => lx = e.touches[0].clientX;
+lb.ontouchend = e => { const d = e.changedTouches[0].clientX - lx; if (Math.abs(d) > 50) show(cur + (d < 0 ? 1 : -1)); };
+document.addEventListener("keydown", e => {
+  if (!lb.classList.contains("on")) return;
+  if (e.key === "Escape") lb.classList.remove("on"); if (e.key === "ArrowLeft") show(cur - 1); if (e.key === "ArrowRight") show(cur + 1);
+});
+
+/* Kartu pos balasan: terbang saat dikirim, tersimpan di browser pengunjung */
+const KEY = "balasan-" + C.id, f = $("#f");
+const load = () => { try { return JSON.parse(localStorage.getItem(KEY)) || []; } catch (e) { return []; } };
+const render = () => {
+  const d = load();
+  $("#list").innerHTML = d.length ? d.map(x => `<article><b>${esc(x.nama)}</b><small>${esc(x.hadir)}, ${esc(x.jumlah)} orang · ${esc(x.tgl)}</small><p>${esc(x.pesan)}</p></article>`).join("") : '<p class="empty">Belum ada kartu pos yang terkirim. Kartu pos Anda akan menjadi yang pertama.</p>';
+};
+f.onsubmit = e => {
+  e.preventDefault();
+  const d = load(); d.unshift({ ...Object.fromEntries(new FormData(f)), tgl: hariIni });
+  try { localStorage.setItem(KEY, JSON.stringify(d)); } catch (x) { return toast("Balasan tidak bisa disimpan di browser ini"); }
+  $("#pc").classList.add("fly"); toast("Kartu pos Anda sedang dikirim...");
+  setTimeout(() => { f.reset(); render(); $("#pc").classList.remove("fly"); toast("Terkirim. Terima kasih!"); }, 1300);
+};
+$("#wa").onclick = () => {
+  if (!f.reportValidity()) return;
+  const v = Object.fromEntries(new FormData(f));
+  const m = `Halo, saya ${v.nama}. Saya ${v.hadir.toLowerCase()} di pernikahan ${A} & ${B} (${v.jumlah} orang).\n\n${v.pesan}`;
+  window.open(`https://wa.me/${C.wa}?text=${encodeURIComponent(m)}`, "_blank", "noopener");
+};
+render();
+
+/* Muncul saat di-scroll */
+const io = new IntersectionObserver(es => es.forEach(x => { if (x.isIntersecting) { x.target.classList.add("in"); io.unobserve(x.target); } }), { threshold: .12 });
+document.querySelectorAll(".rv").forEach(el => io.observe(el));
+</script>
+</body>
+</html>
